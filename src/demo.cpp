@@ -6,7 +6,7 @@ using namespace cv;
 
 int main() {
     while (true) {
-        Mat color = imread("/home/hunter/work/vision2015-master/images/ir.png", CV_LOAD_IMAGE_GRAYSCALE);
+        Mat color = imread("../images/ir.png", CV_LOAD_IMAGE_GRAYSCALE);
         std::vector<YellowTote> totes = find_yellow_ir(color);
         //imshow("Input", color);
         //moveWindow("Input", 0, 0);
